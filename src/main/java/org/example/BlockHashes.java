@@ -8,8 +8,5 @@ import lombok.Data;
 public class BlockHashes {
     private String block;
     private String h;
-    public String blockPlusHash(){
-        return block+h;
-    }
 }
 

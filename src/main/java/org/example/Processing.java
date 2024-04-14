@@ -9,6 +9,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
+
 @Data
 
 public class Processing {
@@ -16,7 +17,7 @@ public class Processing {
     private  List<BlockHashes> blockHashesList = new ArrayList<>();
     private String h0;
     public void dataProcess() throws IOException, NoSuchAlgorithmException {
-        FileInputStream fileInputStream = new FileInputStream("/home/quyen/IdeaProjects/demo/src/main/resources/videos/birthday.mp4");
+        FileInputStream fileInputStream = new FileInputStream("src/main/resources/videos/birthday.mp4");
 
         byte[] videoData = fileInputStream.readAllBytes();
         fileInputStream.close();
